@@ -4,9 +4,6 @@ function setup() {
     var doc = SpreadsheetApp.getActiveSpreadsheet();
     SCRIPT_PROP.setProperty(sheetID, doc.getId());
 }
-function doGet(e) {
-  return HtmlService.createHtmlOutputFromFile('form.html')
-}
 
 function uploadFile(data, file,id,stdCode,firstname,lastname,address,tel,email) {
 try {
